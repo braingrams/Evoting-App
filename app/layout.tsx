@@ -1,8 +1,8 @@
 import { Header } from "@/src/Components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Harmonics SUG EVoting App",

@@ -2,10 +2,19 @@ import React from "react";
 
 export const HeroSection = () => {
   return (
-    <div className="h-[70vh] bg-gray-950 text-white font-bold flex items-center ">
-      <div className="w-4/5 mx-auto text-5xl">
-        <div className="w-2/4 text-5xl leading-relaxed">
-          Welcome to Harmonics SUG E-voting Portal
+    <div className="h-[80vh] text-black flex items-center bg-[url('/assets/hero.jpg')]">
+      <div className="w-4/5 mx-auto">
+        <div className="w-2/4">
+          <div className=" text-[58px] leading-tight font-bold">
+            Election Day is Coming
+          </div>
+          <div className="my-6 text-xl">
+            Make sure to cast your vate, it is your political and fundamental
+            human rights.
+          </div>
+          <button className="bg-[#d8a642] text-white text-[1.2rem] font-medium py-3 px-8 rounded-md">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
