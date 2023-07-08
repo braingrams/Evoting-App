@@ -7,12 +7,12 @@ import { usePathname } from "next/navigation";
 
 export const MenuItems = ({ name, url }: { name: string; url: string }) => {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
   return (
     <Link href={url} passHref>
       <div
-        className={`text-slate-950 hover:text-[#d8a642] ${
-          pathname == url && "text-[#d8a642]"
+        className={`hover:text-[#d8a642] ${
+          pathname == url ? "text-[#d8a642]" : "text-slate-950"
         }`}
       >
         {name}
