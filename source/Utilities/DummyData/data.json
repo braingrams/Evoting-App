@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "David Adeleke",
+    "level": 500,
+    "dept": "Petroleum Engineering",
+    "post": "President",
+    "img": "/assets/a.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tunji Bossman",
+    "level": 400,
+    "dept": "Computer Science",
+    "post": "President",
+    "img": "/assets/b.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chinedu Ajunwa",
+    "level": 300,
+    "dept": "Mechanical Engineering",
+    "post": "President",
+    "img": "/assets/c.jpg"
+  }
+]

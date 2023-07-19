@@ -2,6 +2,8 @@ import React from "react";
 import { HeroSection } from "../Components/HeroSection";
 import data from "../Utilities/DummyData/data.json";
 import { SingleCandidateTag } from "../Components/SingleCandidateTag";
+import AboutUs from "../Components/AboutUs";
+import Footer from "../Components/Footer";
 
 export const Homepage = () => {
   return (
@@ -16,8 +18,12 @@ export const Homepage = () => {
           <SingleCandidateTag data={data} post="Vice President" />
           <SingleCandidateTag data={data} post="Fin Secretary" />
           <SingleCandidateTag data={data} post="Gen Secretary" />
+          <SingleCandidateTag data={data} post="Social Secretary" />
+          <SingleCandidateTag data={data} post="Misc Secretary" />
         </div>
       </div>
+      <AboutUs />
+      <Footer />
     </main>
   );
 };

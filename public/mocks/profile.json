@@ -1,0 +1,128 @@
+[
+    {
+     "position": "SUG President",
+     "name": "David Adeleke",
+     "dept": "Petroleum Engineering",
+     "level": "500",
+     "id": "1"
+    },
+    {
+     "position": "SUG President",
+     "name": "Tunji Bossman",
+     "dept": "Computer Science",
+     "level": "400",
+     "id": "2"
+    },
+    {
+     "position": "SUG President",
+     "name": "Chinedu Ajunwa",
+     "dept": "Mechanical Engineering",
+     "level": "300",
+     "id": "3"
+    },
+    {
+     "position": "Vice President",
+     "name": "Blessing Oluyomi",
+     "dept": "Biochemistry",
+     "level": "400",
+     "id": "4"
+    },
+    {
+     "position": "Vice President",
+     "name": "Chika Collins",
+     "dept": "400",
+     "level": "Economics",
+     "id": "5"
+    },
+    {
+     "position": "Vice President",
+     "name": "Femi Johnson",
+     "dept": "300",
+     "level": "Petroleum Engineering",
+     "id": "6"
+    },
+    {
+     "position": "Fin Secretary",
+     "name": "Emeka Obi",
+     "dept": "Banking & Finance",
+     "level": "300",
+     "id": "7"
+    },
+    {
+     "position": "Fin Secretary",
+     "name": "Oluwaseun Adewale",
+     "dept": "Computer Science",
+     "level": "300",
+     "id": "8"
+    },
+    {
+     "position": "Fin Secretary",
+     "name": "Daniel Ojo",
+     "dept": "Mathematics",
+     "level": "400",
+     "id": "9"
+    },
+    {
+     "position": "Gen Secretary",
+     "name": "Benson Idoho",
+     "dept": "Microbiology",
+     "level": "400",
+     "id": "10"
+    },
+    {
+     "position": "Gen Secretary",
+     "name": "Segun Donald",
+     "dept": "Pharmacy",
+     "level": "300",
+     "id": "11"
+    },
+    {
+     "position": "Gen Secretary",
+     "name": "Olayomi Jacobs",
+     "dept": "Civil Engineering",
+     "level": "300",
+     "id": "12"
+    },
+    {
+     "position": "Social Secretary",
+     "name": "Dorothy Olawale",
+     "dept": "Sociology",
+     "level": "300",
+     "id": "13"
+    },
+    {
+     "position": "Social Secretary",
+     "name": "Peter Boluwatife",
+     "dept": "Mass Communication",
+     "level": "400",
+     "id": "14"
+    },
+    {
+     "position": "Social Secretary",
+     "name": "Jude Coker",
+     "dept": "Sociology",
+     "level": "400",
+     "id": "15"
+    },
+    {
+     "position": "Treasurer",
+     "name": "Angela Lawson",
+     "dept": "Banking & Finance",
+     "level": "400",
+     "id": "16"
+    },
+    {
+     "position": "Treasurer",
+     "name": "Bayo Lawrence",
+     "dept": "Statistics",
+     "level": "400",
+     "id": "17"
+    },
+    {
+     "position": "Treasurer",
+     "name": "Micheal Jones",
+     "dept": "Mathematics",
+     "level": "300",
+     "id": "18"
+    }
+   ]
