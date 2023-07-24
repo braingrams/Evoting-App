@@ -1,11 +1,28 @@
 import React from "react";
 import { HeroSection } from "../Components/HeroSection";
-import data from "../Utilities/DummyData/data.json";
+// import data from "../Utilities/DummyData/data.json";
 import { SingleCandidateTag } from "../Components/SingleCandidateTag";
 import AboutUs from "../Components/AboutUs";
 import Footer from "../Components/Footer";
 
-export const Homepage = () => {
+async function getData() {
+  try {
+    const res = await fetch(
+      "https://mocki.io/v1/d5c9c490-db2c-439e-8f3a-f44f89284d0a",
+      { next: { revalidate: 10 } }
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    return res.json();
+  } catch (error) {
+    console.log({ error });
+  }
+}
+
+export const Homepage = async () => {
+  const data = await getData();
+  console.log({ data });
   return (
     <main className="bg-white min-h-screen">
       <HeroSection />
