@@ -6,8 +6,8 @@ export default function Signup() {
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <div className="w-full p-6  my-6 bg-white rounded-md shadow-md lg:max-w-xl">
         {/* <Image className="justify-center" src="/assets/logo.png" width={164} height={32} alt="Logo" /> */}
-        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-[#d8a642]">
-          Create An Account To Vote
+        <h1 className="text-3xl font-bold text-center text-[#d8a642]">
+          Register To Vote
         </h1>
         <form className="mt-6">
           <div className="mb-4">
@@ -82,12 +82,30 @@ export default function Signup() {
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
-          <Link
-            href="/forget"
-            className="text-xs text-[#d8a642] hover:underline"
-          >
-            Forget Password?
-          </Link>
+          <div className="flex items-start my-6">
+            <div className="flex items-center h-5">
+              <input
+                type="terms"
+                aria-describedby="terms"
+                type="checkbox"
+                className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+              />
+            </div>
+            <div className="ml-3 text-sm">
+              <label
+                htmlFor="terms"
+                className="font-light text-black"
+              >
+                I accept the{" "}
+                <a
+                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  href="#"
+                >
+                  Terms and Conditions
+                </a>
+              </label>
+            </div>
+          </div>
           <div className="mt-2">
             <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-black rounded-md hover:bg-[#d8a642] focus:outline-none focus:bg-gray-600">
               Sign up
