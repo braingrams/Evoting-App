@@ -5,7 +5,7 @@ export const CandidateView = ({ data }: { data: any }) => {
   return (
     <div className="w-full h-[20rem] bg-green-500  relative">
       <Image
-        src={data.img}
+        src={data.image}
         layout="fill"
         alt="candidate image"
         className="w-full h-full object-cover"

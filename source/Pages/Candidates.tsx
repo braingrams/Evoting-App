@@ -1,10 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CandidateProfile = () => {
-  const Select = () => {
-    // setusenumber(usenumber+1);
-  };
+const Candidates = () => {
   return (
     <section className="pt-16 bg-blueGray-50">
       <div className="w-full lg:w-4/12 px-4 mx-auto">
@@ -14,7 +11,7 @@ const CandidateProfile = () => {
               <div className="w-full px-4 flex justify-center">
                 <div className="relative">
                   <Image
-                    src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"
+                    src="/assets/a.jpg"
                     className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                     alt={""}
                   />
@@ -118,11 +115,8 @@ const CandidateProfile = () => {
           </div>
         </div>
       </div>
-      <div className="button">
-        <button onClick={Select}>Select</button>
-      </div>
     </section>
   );
 };
 
-export default CandidateProfile;
+export default Candidates;

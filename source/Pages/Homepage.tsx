@@ -8,7 +8,7 @@ import Footer from "../Components/Footer";
 async function getData() {
   try {
     const res = await fetch(
-      "https://mocki.io/v1/d5c9c490-db2c-439e-8f3a-f44f89284d0a",
+      "https://64b7af7521b9aa6eb078ceee.mockapi.io/profile",
       { next: { revalidate: 10 } }
     );
     if (!res.ok) {
@@ -36,7 +36,7 @@ export const Homepage = async () => {
           <SingleCandidateTag data={data} post="Fin Secretary" />
           <SingleCandidateTag data={data} post="Gen Secretary" />
           <SingleCandidateTag data={data} post="Social Secretary" />
-          <SingleCandidateTag data={data} post="Misc Secretary" />
+          <SingleCandidateTag data={data} post="Treasurer" />
         </div>
       </div>
       <AboutUs />

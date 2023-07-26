@@ -1,26 +1,146 @@
 [
   {
-    "id": 1,
-    "name": "David Adeleke",
-    "level": 500,
-    "dept": "Petroleum Engineering",
-    "post": "President",
-    "img": "/assets/a.jpg"
+   "position": "SUG President",
+   "name": "David Adeleke",
+   "dept": "Petroleum Engineering",
+   "level": "500",
+   "image": "/assets/a.jpg",
+   "id": "1"
   },
   {
-    "id": 2,
-    "name": "Tunji Bossman",
-    "level": 400,
-    "dept": "Computer Science",
-    "post": "President",
-    "img": "/assets/b.jpg"
+   "position": "SUG President",
+   "name": "Tunji Bossman",
+   "dept": "Computer Science",
+   "level": "400",
+   "image": "/assets/b.jpg",
+   "id": "2"
   },
   {
-    "id": 3,
-    "name": "Chinedu Ajunwa",
-    "level": 300,
-    "dept": "Mechanical Engineering",
-    "post": "President",
-    "img": "/assets/c.jpg"
+   "position": "SUG President",
+   "name": "Chinedu Ajunwa",
+   "dept": "Mechanical Engineering",
+   "level": "300",
+   "image": "/assets/c.jpg",
+   "id": "3"
+  },
+  {
+   "position": "Vice President",
+   "name": "Blessing Oluyomi",
+   "dept": "Biochemistry",
+   "level": "400",
+   "image": "/assets/w.jpg",
+   "id": "4"
+  },
+  {
+   "position": "Vice President",
+   "name": "Chika Collins",
+   "dept": "Economics",
+   "level": "400",
+   "image": "/assets/d.jpg",
+   "id": "5"
+  },
+  {
+   "position": "Vice President",
+   "name": "Femi Johnson",
+   "dept": "Petroleum Engineering",
+   "level": "300",
+   "image": "/assets/g.jpg",
+   "id": "6"
+  },
+  {
+   "position": "Fin Secretary",
+   "name": "Emeka Obi",
+   "dept": "Banking & Finance",
+   "level": "300",
+   "image": "/assets/f.jpg",
+   "id": "7"
+  },
+  {
+   "position": "Fin Secretary",
+   "name": "Oluwaseun Adewale",
+   "dept": "Computer Science",
+   "level": "300",
+   "image": "/assets/p.jpg",
+   "id": "8"
+  },
+  {
+   "position": "Fin Secretary",
+   "name": "Daniel Ojo",
+   "dept": "Mathematics",
+   "level": "400",
+   "image": "/assets/q.webp",
+   "id": "9"
+  },
+  {
+   "position": "Gen Secretary",
+   "name": "Segun Donald",
+   "dept": "Pharmacy",
+   "level": "300",
+   "image": "/assets/i.jpg",
+   "id": "10"
+  },
+  {
+   "position": "Gen Secretary",
+   "name": "Benson Idoho",
+   "dept": "Microbiology",
+   "level": "400",
+   "image": "/assets/j.jpg",
+   "id": "11"
+  },
+  {
+   "position": "Gen Secretary",
+   "name": "Olayomi Jacobs",
+   "dept": "Civil Engineering",
+   "level": "300",
+   "image": "/assets/k.jpg",
+   "id": "12"
+  },
+  {
+   "position": "Social Secretary",
+   "name": "Dorothy Olawale",
+   "dept": "Sociology",
+   "level": "300",
+   "image": "/assets/x.jpeg",
+   "id": "13"
+  },
+  {
+   "position": "Social Secretary",
+   "name": "Peter Boluwatife",
+   "dept": "Mass Communication",
+   "level": "400",
+   "image": "/assets/h.jpg",
+   "id": "14"
+  },
+  {
+   "position": "Social Secretary",
+   "name": "Jude Coker",
+   "dept": "Sociology",
+   "level": "400",
+   "image": "/assets/m.jpg",
+   "id": "15"
+  },
+  {
+   "position": "Treasurer",
+   "name": "Bayo Lawrence",
+   "dept": "Statistics",
+   "level": "400",
+   "image": "/assets/n.jpg",
+   "id": "16"
+  },
+  {
+   "position": "Treasurer",
+   "name": "Angela Lawson",
+   "dept": "Banking & Finance",
+   "level": "400",
+   "image": "/assets/v.jpeg",
+   "id": "17"
+  },
+  {
+   "position": "Treasurer",
+   "name": "Micheal Jones",
+   "dept": "Mathematics",
+   "level": "300",
+   "image": "/assets/o.jpg",
+   "id": "18"
   }
-]
+ ]
