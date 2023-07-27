@@ -15,13 +15,13 @@ const ContactUs = () => {
           autem omnis fugiat perspiciatis? Ad, veritatis.
         </p>
         <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-          New York, 94126, United States
+          6, Akoka Street, Yaba Lagos.
         </p>
         <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-          + 01 234 567 89
+          08090566899, 09065558778
         </p>
         <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-          info@gmail.com
+          leadership@gmail.com
         </p>
       </div>
       <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">

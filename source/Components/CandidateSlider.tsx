@@ -20,7 +20,6 @@ export const CandidateSlider = ({ data }: { data: any }) => {
     <div className="h-[20rem] w-fulls">
       <Slider {...settings}>
         {data
-          .filter((x: any) => x.post !== "President")
           .map((x: any) => (
             <CandidateView key={x.id} data={x} />
           ))}

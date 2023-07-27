@@ -31,12 +31,12 @@ export const Homepage = async () => {
           Candidate Gallery
         </h2>
         <div className="grid grid-cols-3 gap-14 py-10 w-4/5 mx-auto">
-          <SingleCandidateTag data={data} post="SUG President" />
-          <SingleCandidateTag data={data} post="Vice President" />
-          <SingleCandidateTag data={data} post="Fin Secretary" />
-          <SingleCandidateTag data={data} post="Gen Secretary" />
-          <SingleCandidateTag data={data} post="Social Secretary" />
-          <SingleCandidateTag data={data} post="Treasurer" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="SUG President")}post="SUG President" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="Vice President")} post="Vice President" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="Fin Secretary")} post="Fin Secretary" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="Gen Secretary")} post="Gen Secretary" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="Social Secretary")} post="Social Secretary" />
+          <SingleCandidateTag data={data.filter((x:any)=>x.position=="Treasurer")} post="Treasurer" />
         </div>
       </div>
       <AboutUs />

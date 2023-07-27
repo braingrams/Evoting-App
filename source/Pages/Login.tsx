@@ -5,7 +5,6 @@ export default function Login() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <div className="w-full p-6 bg-white rounded-md shadow-md lg:max-w-xl">
-        {/* <Image className="justify-center" src="/assets/logo.png" width={164} height={32} alt="Logo" /> */}
         <h1 className="text-3xl font-bold text-center text-[#d8a642]">
           Welcome Back
         </h1>
