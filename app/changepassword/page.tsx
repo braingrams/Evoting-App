@@ -1,10 +1,9 @@
-import Login from '@/source/Pages/Login'
+import ChangePassword from '@/source/Pages/ChangePassword'
 import React from 'react'
 
 const page = () => {
   return (
-    <Login />
-    
+    <ChangePassword />
   )
 }
 

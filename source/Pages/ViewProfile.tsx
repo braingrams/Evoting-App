@@ -4,34 +4,47 @@ import Image from "next/image";
 const ViewProfile = () => {
   return (
     <>
-      <div id="about" className="relative bg-white overflow-hidden mt-16">
-        <h3 className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-          David Adeleke
-        </h3>
-        <div className="mb-2 text-blueGray-600 mt-10">
-          <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-          SUG President
-        </div>
-        <div className="mb-2 text-blueGray-600">
-          <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-          Department - Petroleum Engineering
-        </div>
-        <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-                fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <polygon points="50,0 100,0 50,100 0,100"></polygon>
-            </svg>
+      <div className="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 bg-black">
+        <div className="flex justify-center items-end text-center min-h-screen sm:block">
+          
+          <div className="inline-block text-left bg-white rounded-lg overflow-hidden align-bottom transition-allshadow-2xl sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
+            <div className="items-left w-full mr-auto ml-auto relative max-w-7xl md:px-12 lg:px-24">
+              <div className="grid grid-cols-1 items-left">
+                <div className="mt-4 mr-auto mb-4 ml-auto items-left bg-white max-w-lg">
+                  <div className="flex flex-col items-left pt-6 pr-6 pb-6 pl-6">
+                    
 
-            <div className="pt-1"></div>
+                    <Image
+                      src="/assets/b.jpg"
+                      width={24}
+                      height={24}
+                      className="rounded-full w-16 h-16"
+                      alt={""}
+                    />
+                    <p className="mt-10 text-2xl font-semibold leading-none text-black tracking-tighter lg:text-3xl">
+                      David Adeleke
+                    </p>
 
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                <div className="sm:text-center lg:text-left">
-                    <h2 className="my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-                        About me
-                    </h2>
-                <p>
-                  My name David Adeleke, a distinguished academic leader and a
+                    <h3 className="fas fa-briefcase mr-2 text-semibold text-lg text-black">
+                      SUG President
+                    </h3>
+
+                    <h3 className="fas fa-briefcase mr-2 text-semibold text-lg text-black">
+                    Petroleum Engineering
+                    </h3>
+
+                    <h3 className="fas fa-briefcase mr-2 text-bold text-lg text-black">
+                    500 Level
+                    </h3>
+
+                    
+
+                    <div className=" mt-10 text-lg font-semibold leading-none text-black tracking-tighter lg:text-lg mb-2 text-blueGray-600">
+                      <h2 className="fas fa-university mr-2 text-lg text-blueGray-400"></h2>
+                      About Me
+                    </div>
+                    <p className="mt-2 text-base text-left leading-relaxed text-black">
+                    My name David Adeleke, a distinguished academic leader and a
                   visionary candidate running for the position of an SUG
                   President at the University Of Bells. With a profound
                   commitment to excellence in higher education and a passion for
@@ -55,8 +68,15 @@ const ViewProfile = () => {
                   initiatives, and actively promoted diversity and inclusion
                   within the department. I have also served as a member of
                   various university-wide committees, where I advocated for
-                  student-centered policies and initiatives. Vision for
-                  University Of Bells: My vision for University Of Bells is
+                  student-centered policies and initiatives.
+                    </p>
+                    <div className=" mt-10 text-lg font-semibold leading-none text-black tracking-tighter lg:text-lg mb-2 text-blueGray-600">
+                      <h2 className="fas fa-university mr-2 text-lg text-blueGray-400"></h2>
+                      Manifesto
+                    </div>
+                    <p className="mt-2 text-base text-left leading-relaxed text-black">
+                    <span>Vision for
+                  University Of Bells:</span> My vision for University Of Bells is
                   centered around academic excellence, student empowerment, and
                   community engagement. I envision a university that embraces
                   interdisciplinary collaboration, embraces emerging
@@ -94,21 +114,26 @@ const ViewProfile = () => {
                   vision, experience, and dedication will make me capable and an
                   inspiring leader who can guide the university towards a
                   promising future.
-                </p>
+                    </p>
+
+                    <div className="w-50 mt-6">
+                      <button
+                        className="text-center items-center justify-center w-30 h-10 pt-4 pr-10 pb-9 pl-10 text-base
+                    font-medium text-white bg-gray-700 rounded-xl transition duration-500 ease-in-out transform
+                    hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-"
+                      >
+                        VOTE
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </main>
+            </div>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <Image
-            className="h-56 w-full object-cover object-top sm:h-72 md:h-96"
-            src="/assets/a.jpg"
-            width={24}
-            height={24}
-            alt=""
-          />
-        </div>
       </div>
+
+      
     </>
   );
 };

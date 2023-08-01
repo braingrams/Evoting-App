@@ -10,7 +10,7 @@ export const HeroSection = () => {
           </div>
           <div className="my-6 text-xl">
             Make sure to cast your vote, it is your political and fundamental
-            human rights.
+            human right.
           </div>
           <button className="bg-[#d8a642] text-white text-[1.2rem] font-medium py-3 px-8 rounded-md">
             Get Started
