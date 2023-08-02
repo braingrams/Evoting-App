@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 
-const SignUp = () => {
+const CandidateForm = () => {
+
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <div className="w-full p-6  my-6 bg-white rounded-md shadow-md lg:max-w-xl">
         <h1 className="text-3xl font-bold text-center text-[#d8a642]">
-          Register To Vote
+          Register To Contest
         </h1>
         <form className="mt-6">
           <div className="mb-4">
@@ -25,18 +25,6 @@ const SignUp = () => {
           </div>
           <div className="mb-2">
             <label
-              htmlFor="number"
-              className="block text-sm font-medium text-gray-800"
-            >
-              Matric Number
-            </label>
-            <input
-              type="tel"
-              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
-            />
-          </div>
-          <div className="mb-4">
-            <label
               htmlFor="email"
               className="block text-sm font-medium text-gray-800"
             >
@@ -47,39 +35,83 @@ const SignUp = () => {
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
-          <div className="mb-2">
+          <div className="mb-4">
             <label
-              htmlFor="password"
+              htmlFor="number"
               className="block text-sm font-medium text-gray-800"
             >
-              Password
+              Phone Number
             </label>
             <input
-              type="password"
+              type="tel"
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
+          <div className="mb-2">
+            <label
+              htmlFor="number"
+              className="block text-sm font-medium text-gray-800"
+            >
+              Level
+            </label>
+            <input
+              type="tel"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+          <div className="mb-2">
+            <label
+              htmlFor="text"
+              className="block text-sm font-medium text-gray-800"
+            >
+              Dept
+            </label>
+            <input
+              type="text"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+          <div className="mb-2">
+            <label
+              htmlFor="text"
+              className="block text-sm font-medium text-gray-800"
+            >
+              Position
+            </label>
+            <input
+              type="text"
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+          <div className="mb-2">
+            <label
+              htmlFor="MyTextarea"
+              className="block text-sm font-medium text-gray-800"
+            >
+              Manifesto
+            </label>
+            <textarea
+            name="message"
+              className="px-4 py-2 mt-2 text-gray-700 w-full bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              id="MyTextarea"
+              rows="10"
+            ></textarea>
+          </div>
 
+         
           <div className="mt-8">
-            <Link href="/candidates">
-              <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-black rounded-md hover:bg-[#d8a642] focus:outline-none focus:bg-gray-600">
-                Sign up
+            <Link href="">
+              <button type="submit"
+                className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-black rounded-md hover:bg-[#d8a642] focus:outline-none focus:bg-gray-600"
+              >
+                Submit
               </button>
             </Link>
           </div>
         </form>
-        <p className="mt-4 text-sm text-center text-gray-700">
-          Already have an account?{" "}
-          <Link
-            href="/login"
-            className="font-medium text-[#d8a642] hover:underline"
-          >
-            Login
-          </Link>
-        </p>
       </div>
     </div>
   );
 };
 
-export default SignUp;
+export default CandidateForm;
