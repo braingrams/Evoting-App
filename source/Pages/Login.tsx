@@ -1,11 +1,7 @@
 import Link from "next/link";
-// import Candidates from '@/source/Pages/Candidates'
-
-// import Image from "next/image";
 
 const Login = () => {
   return (
-    
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
       <div className="w-full p-6 bg-white rounded-md shadow-md lg:max-w-xl">
         <h1 className="text-3xl font-bold text-center text-[#d8a642]">
