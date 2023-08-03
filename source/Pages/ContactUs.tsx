@@ -113,7 +113,7 @@ const ContactUs = () => {
                   name="message"
                   className="px-4 py-2 mt-2 text-gray-700 w-full bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
                   id="MyTextarea"
-                  rows="10"
+                  rows={10}
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
