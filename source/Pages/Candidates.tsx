@@ -6,6 +6,15 @@ import Image from "next/image";
 const Candidates = () => {
   const [showModal, setShowModal] = useState(false);
 
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    // Your form submission logic...
+    setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false);
+    }, 5000); // Hide the modal after 5 seconds (5000 milliseconds)
+  };
+
   return (
     
       <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 py-8">
@@ -46,7 +55,7 @@ const Candidates = () => {
               <a
                 href=""
                 className="flex justify-center items-center px-3 py-2 text-sm font-medium w-1/2 text-white bg-gray-300 rounded-lg dark:bg-gray-700 dark:hover:bg-black"
-                onClick={() => setShowModal(true)}
+                onClick={handleSubmit}
               >
                 Vote
               </a>
@@ -81,7 +90,7 @@ const Candidates = () => {
                   <div className="items-center px-4 py-3">
                     <button
                       className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
-                      onClick={() => setShowModal(false)}
+                      onClick={handleSubmit}
                     >
                       OK
                     </button>
