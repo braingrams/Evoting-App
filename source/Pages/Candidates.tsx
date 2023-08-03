@@ -52,7 +52,7 @@ const Candidates = () => {
               </a>
             </div>
             {showModal ? (
-              <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+              <div className="fixed inset-0 flex items-center justify-center mx-auto mt-10 p-5 border h-80 w-96 shadow-lg rounded-md bg-white">
                 <div className="mt-3 text-center">
                   <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
                     <svg
