@@ -33,7 +33,7 @@ export const Header = () => {
           <MenuItems name="Candidates" url="/candidates" />
           <a
             href="/login"
-            className="flex items-center justify-center h-20 px-5 text-sm 
+            className="flex items-center justify-center h-10 px-5 text-sm 
           text-center text-black transition-colors duration-200 transform border rounded-lg xl:h-10 
           border-black focus:outline-none hover:border-[#d8a642] hover:bg-[#d8a642] hover:text-white"
           >
@@ -41,7 +41,7 @@ export const Header = () => {
           </a>
           <a
             href="/signup"
-            className="flex items-center justify-center h-20 px-5 text-sm 
+            className="flex items-center justify-center h-10 px-5 text-sm 
           text-center text-black transition-colors duration-200 transform border rounded-lg xl:h-10 
           border-black focus:outline-none hover:border-[#d8a642] hover:bg-[#d8a642] hover:text-white"
           >
@@ -49,7 +49,7 @@ export const Header = () => {
           </a>
           <a
             href="/apply"
-            className="flex items-center justify-center h-20 px-5 text-sm 
+            className="flex items-center justify-center h-10 px-5 text-sm 
           text-center text-black transition-colors duration-200 transform border rounded-lg xl:h-10 
           border-black focus:outline-none hover:border-[#d8a642] hover:bg-[#d8a642] hover:text-white"
           >

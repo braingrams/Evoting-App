@@ -13,7 +13,7 @@ export const HeroSection = () => {
             human right.
           </div>
           <button className="bg-[#d8a642] text-white text-[1.2rem] font-medium py-3 px-8 rounded-md">
-            Get Started
+           <a href="/login"> Get Started</a>
           </button>
         </div>
       </div>
