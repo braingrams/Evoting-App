@@ -1,13 +1,31 @@
 "use client";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d42eec8feb568531a918a72e2549ac795e8318a
 import React, { useState } from "react";
 import Image from "next/image";
 
 const ViewProfile = () => {
+<<<<<<< HEAD
   const [voted, setVoted] = useState(false);
   const handleVoteClick = () => {
     // Perform any vote-related logic here, if needed.
     setVoted(true);
   };
+=======
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    // Your form submission logic...
+    setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false);
+    }, 5000); // Hide the modal after 5 seconds (5000 milliseconds)
+  };
+
+>>>>>>> 2d42eec8feb568531a918a72e2549ac795e8318a
   return (
     <>
       <div className="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 bg-black">
@@ -150,9 +168,48 @@ const ViewProfile = () => {
                         className="text-center items-center justify-center w-full h-10 pt-4 pr-10 pb-9 pl-10 text-base
                     font-medium text-white bg-gray-700 rounded-xl transition duration-500 ease-in-out transform
                     hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-"
+                        onClick={handleSubmit}
                       >
                         <a href="/candidates">Back</a>
                       </button>
+                      {showModal ? (
+                        <div className="fixed inset-0 flex items-center justify-center mx-auto mt-10 p-5 border h-80 w-96 shadow-lg rounded-md bg-white">
+                          <div className="mt-3 text-center">
+                            <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+                              <svg
+                                className="h-6 w-6 text-green-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M5 13l4 4L19 7"
+                                ></path>
+                              </svg>
+                            </div>
+                            <h3 className="text-lg leading-6 font-medium text-gray-900">
+                              Voted
+                            </h3>
+                            <div className="mt-2 px-7 py-3">
+                              <p className="text-sm text-red-500">
+                                You Can Only Vote Once
+                              </p>
+                            </div>
+                            <div className="items-center px-4 py-3">
+                              <button
+                                className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+                                onClick={handleSubmit}
+                              >
+                                OK
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 </div>
