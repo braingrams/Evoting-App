@@ -1,31 +1,22 @@
 "use client";
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d42eec8feb568531a918a72e2549ac795e8318a
 import React, { useState } from "react";
 import Image from "next/image";
 
 const ViewProfile = () => {
-<<<<<<< HEAD
   const [voted, setVoted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const handleVoteClick = () => {
     // Perform any vote-related logic here, if needed.
     setVoted(true);
   };
-=======
-  const [showModal, setShowModal] = useState(false);
-
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    // Your form submission logic...
-    setShowModal(true);
-    setTimeout(() => {
-      setShowModal(false);
-    }, 5000); // Hide the modal after 5 seconds (5000 milliseconds)
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
->>>>>>> 2d42eec8feb568531a918a72e2549ac795e8318a
+  const handleBackClick = () => {
+    
+    setShowModal(false);
+  };
   return (
     <>
       <div className="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 bg-black">
@@ -168,7 +159,7 @@ const ViewProfile = () => {
                         className="text-center items-center justify-center w-full h-10 pt-4 pr-10 pb-9 pl-10 text-base
                     font-medium text-white bg-gray-700 rounded-xl transition duration-500 ease-in-out transform
                     hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-"
-                        onClick={handleSubmit}
+                        onClick={handleVoteClick}
                       >
                         <a href="/candidates">Back</a>
                       </button>
@@ -202,7 +193,7 @@ const ViewProfile = () => {
                             <div className="items-center px-4 py-3">
                               <button
                                 className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
-                                onClick={handleSubmit}
+                                onClick={handleVoteClick}
                               >
                                 OK
                               </button>
